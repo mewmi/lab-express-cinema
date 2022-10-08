@@ -1,0 +1,11 @@
+<h1>Movies</h1>
+
+<ul>
+  {{#each movies}}
+    <li>
+      <img src="{{image}}" alt="{{title}} poster" />
+      <h4>{{title}}</h4>
+      <a href="/movie/{{_id}}"><button>See More</button></a>
+    </li>
+  {{/each}}
+</ul>
